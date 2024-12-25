@@ -1,0 +1,80 @@
+.category {
+  width: 100%;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  .category-center {
+    width: var(--width-center);
+    height: 100%;
+    padding: 10px;
+    .category-center-header {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .category-center-header-txt {
+        font-family: var(--fontRegular);
+        font-size: 21px;
+        font-weight: 500;
+      }
+    }
+    .category-main {
+      width: 100%;
+      height: calc(100% - 70px);
+      .category-center-row-first {
+        width: inherit;
+        height: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        .category-center-row-first-item {
+          width: auto;
+          height: 100%;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          align-items: center;
+          .category-center-row-first-item-img {
+            width: 100px;
+            height: 100px;
+          }
+          .category-center-row-first-item-txt {
+            font-family: var(--fontRegular);
+            font-size: 12px;
+            font-weight: bolder;
+            padding-top: 10px;
+          }
+        }
+      }
+      .category-center-row-second {
+        width: inherit;
+        height: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        .category-center-row-second-item {
+          width: auto;
+          height: 100%;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          align-items: center;
+          .category-center-row-second-item-img {
+            width: 100px;
+            height: 100px;
+          }
+          .category-center-row-second-item-txt {
+            font-family: var(--fontRegular);
+            font-size: 12px;
+            font-weight: bolder;
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

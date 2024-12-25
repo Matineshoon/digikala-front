@@ -1,0 +1,30 @@
+.supermarket-btn-container {
+  width: 130px;
+  height: 52px;
+  position: fixed;
+  z-index: 10;
+  left: 50px;
+  bottom: 20px;
+  .supermarket-btn-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #029a49;
+    border-radius: var(--xlarge-radius);
+    flex-flow: row wrap;
+    align-items: center;
+    column-gap: 5px;
+    justify-content: center;
+    text-decoration: none;
+    .supermarket-btn-txt {
+      font-family: var(--fontRegular);
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .supermarket-btn-img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

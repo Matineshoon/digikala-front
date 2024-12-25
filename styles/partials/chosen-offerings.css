@@ -1,0 +1,124 @@
+.chosen-offerigs {
+    width: 100%;
+    height: calc(330px + 480px);
+    display: flex;
+    justify-content: center;
+    .chosen-offerigs-center {
+        width: var(--width-center);
+        height: 100%;
+        border: 1px solid rgba(230, 230, 230, 0.5);
+        border-radius: var(--large-radius);
+        position: relative;
+        .chosen-offerigs-center-header-container {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            position: relative;
+            right: calc(50% - 320px / 2);
+            .chosen-offerigs-center-header-txt {
+                font-family: var(--fontRegular);
+                font-size: 21px;
+                color: #000000;
+                font-weight: normal;
+            }
+        }
+        .chosen-offerigs-center-main-container {
+            width: 100%;
+            height: calc(100% - 80px);
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding:0 15px;
+            .chosen-offerigs-center-row-container {
+                width: 100%;
+                height: 240px;
+                
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-between;
+                .chosen-offerigs-center-item-container {
+                    width: 212px;
+                    height: 100%;
+                    padding: 20px 0 0 0;
+                    position: relative;
+                    display: flex;
+                    flex-flow: column wrap;
+
+                    border-left: 1px solid rgba(230, 230, 230, 0.5);
+                    .chosen-offerigs-center-item-img-container {
+                        width: 100%;
+                        height: 60%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .chosen-offerigs-center-item-img {
+                            width: 150px !important;
+                            height: 150px !important;
+                        }
+                        
+                    }
+                    .chosen-offerigs-center-item-prices-container {
+                        width: 100%;
+                        height: 20%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        position: relative;
+                        padding:0 15px;
+                        .chosen-offerigs-center-item-off {
+                            width: 34px;
+                            height: 20px;
+                            background-color: #d32f2f;
+                            border-radius: var(--large-radius);
+                            font-family: var(--fontRegular);
+                            font-size: 12px;
+                            font-weight: 700;
+                            color: #ffffff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .chosen-offerigs-center-item-new-price {
+                            font-family: var(--fontRegular);
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #3f4064;
+                            display: flex;
+                            align-items: center;
+                            .chosen-offerigs-center-item-price-svg {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                        
+                    }
+                    .chosen-offerigs-center-item-real-price-container {
+                        width: 100%;
+                        height: 20%;
+                        position: relative;
+                        .chosen-offerigs-center-item-real-price {
+                            font-family: var(--fontRegular);
+                            font-size: 12px;
+                            text-decoration: line-through;
+                            color: #c0c2c5;
+                            position: absolute;
+                            left: 30px;
+                            bottom: 35px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+.chosen-offerigs-border-bottom {
+    border-bottom: 1px solid rgba(230, 230, 230, 0.5);
+}
+.chosen-offerigs-no-border {
+    border-left: none !important;
+}

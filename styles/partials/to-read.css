@@ -1,0 +1,80 @@
+.to-read {
+  width: 100%;
+  height: 320px;
+  margin: 20px 0;
+  display: flex;
+  box-shadow: 0 1px 0 rgb(230, 230, 230);
+  justify-content: center;
+  .to-read-center {
+    width: var(--width-center);
+    height: 100%;
+    .to-read-center-top {
+      width: 100%;
+      height: 30px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .to-read-center-top-head {
+        width: fit-content;
+        height: 100%;
+        .to-read-center-top-head-txt {
+          font-family: var(--fontRegular);
+          font-size: 16px;
+          font-weight: normal;
+          color: #0c0c0c;
+        }
+      }
+      .to-read-center-top-head-more-content-link-container {
+        width: fit-content;
+        height: 100%;
+        .to-read-center-top-head-more-content-link {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          font-family: var(--fontRegular);
+          font-size: 12px;
+          color: #19bfd3;
+          font-weight: normal;
+          .to-read-center-top-head-more-content-link-svg {
+            width: 18px !important;
+            height: 18px !important;
+          }
+        }
+      }
+    }
+    .to-read-center-main {
+      width: 100%;
+      height: calc(320px - 30px);
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+      .to-read-center-main-item {
+        width: 325px;
+        height: 255px;
+        border: 1px solid rgb(230, 230, 230);
+        border-radius: var(--medium-radius);
+        .to-read-center-main-item-link {
+          display: flex;
+          flex-flow: column wrap;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          .to-read-center-main-item-link-img {
+            width: 325px;
+            height: 200px;
+            border-top-left-radius: var(--medium-radius);
+            border-top-right-radius: var(--medium-radius);
+          }
+          .to-read-center-main-item-link-txt {
+            font-family: var(--fontRegular);
+            font-size: 12px;
+            color: #0c0c0c;
+            margin: 15px 10px;
+          }
+        }
+      }
+    }
+  }
+}

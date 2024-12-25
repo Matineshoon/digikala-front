@@ -1,0 +1,90 @@
+.new-offers-top {
+  width: 100%;
+  height: 265px;
+  display: flex;
+  justify-content: center;
+  margin:10px 5px;
+  .new-offers-top-center {
+    width: var(--width-center);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+    .new-offers-top-center-right {
+      width: 50%;
+      height: 100%;
+      .new-offers-top-center-link {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        .new-offers-top-center-link-img {
+          width: 660px;
+          height: 264px;
+          border-radius: var(--large-radius);
+        }
+      }
+    }
+    .new-offers-top-center-left {
+      width: 50%;
+      height: 100%;
+      .new-offers-top-center-link {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        .new-offers-top-center-link-img {
+          width: 645px;
+          height: 264px;
+          border-radius: var(--large-radius);
+        }
+      }
+    }
+  }
+}
+.new-offers-bottom {
+  width: 100%;
+  height: 265px;
+  margin:10px 5px;
+  display: flex;
+  justify-content: center;
+  .new-offers-bottom-center {
+    width: var(--width-center);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+    .new-offers-bottom-center-right {
+      width: 50%;
+      height: 100%;
+      .new-offers-bottom-center-link {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        .new-offers-bottom-center-link-img {
+          width: 645px;
+          height: 264px;
+          border-radius: var(--large-radius);
+        }
+      }
+    }
+    .new-offers-bottom-center-left {
+      width: 50%;
+      height: 100%;
+      .new-offers-bottom-center-link {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        .new-offers-bottom-center-link-img {
+          width: 660px;
+          height: 264px;
+          border-radius: var(--large-radius);
+        }
+      }
+    }
+  }
+}
