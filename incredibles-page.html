@@ -37,11 +37,13 @@
       <!-- #region search-->
       <div class="header-search">
         <div class="header-search-logo">
-          <img
-            src="./images/svg/digilogo.svg"
-            alt="digikala logo"
-            class="header-search-logo-img"
-          />
+          <a href="index.html" class="header-search-logo-link-img">
+            <img
+              src="./images/svg/digilogo.svg"
+              alt="digikala logo"
+              class="header-search-logo-img"
+            />
+          </a>
         </div>
         <div class="header-search-ajax">
           <input
@@ -164,7 +166,49 @@
     <!-- #region top-refferer-id-->
     <span id="top"></span>
     <!-- #endregion -->
-    
+    <!-- #region incredible-offers-slider-->
+    <div class="incredible-offers-slider">
+      <div class="incredible-offers-slider-head-img-container">
+        <img src="" alt="" class="incredible-offers-slider-head-img" />
+      </div>
+      <!-- Swiper -->
+      <div class="swiper incredible-offers-Swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./images/incredibles-page/incredible-page-slider-image1.gif"
+              alt=""
+              class="incredible-offers-swiper-slide-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/incredibles-page/incredible-page-slider-image2.jpg"
+              alt=""
+              class="incredible-offers-swiper-slide-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/incredibles-page/incredible-page-slider-image3.jpg"
+              alt=""
+              class="incredible-offers-swiper-slide-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/incredibles-page/incredible-page-slider-image4.jpg"
+              alt=""
+              class="incredible-offers-swiper-slide-img"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next incredible-offers-Swiper-nav-next"></div>
+        <div class="swiper-button-prev incredible-offers-Swiper-nav-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- #endregion -->
     <!-- #region footer-wrapper-->
     <div class="footer-wrapper">
       <!-- #region footer-->
@@ -598,6 +642,30 @@
       </footer>
       <!-- #endregion -->
     </div>
+    <!-- #endregion -->
+    <!-- #region swiperJS-->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".incredible-offers-Swiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <!-- #endregion -->
   </body>
 </html>
