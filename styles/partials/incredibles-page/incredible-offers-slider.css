@@ -1,6 +1,7 @@
 .incredible-offers-slider {
   width: 100%;
   height: 465px;
+  position: relative;
   .incredible-offers-slider-head-img-container {
     width: 100%;
     height: 65px;
@@ -16,11 +17,9 @@
   .swiper {
     width: 100%;
     height: calc(100% - 65px);
-    position: relative;
     .swiper-wrapper {
-       width: 100%;
-        height: 100%;
-       
+      width: 100%;
+      height: 100%;
 
       .swiper-slide {
         text-align: center;
@@ -40,4 +39,3 @@
     }
   }
 }
-

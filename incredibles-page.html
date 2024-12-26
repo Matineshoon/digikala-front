@@ -176,28 +176,28 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img
-              src="./images/incredibles-page/incredible-page-slider-image1.gif"
+              src="./images/incredibles-page/incredible-offers-slider/incredible-page-slider-image1.gif "
               alt=""
               class="incredible-offers-swiper-slide-img"
             />
           </div>
           <div class="swiper-slide">
             <img
-              src="./images/incredibles-page/incredible-page-slider-image2.jpg"
+              src="./images/incredibles-page/incredible-offers-slider/incredible-page-slider-image2.jpg"
               alt=""
               class="incredible-offers-swiper-slide-img"
             />
           </div>
           <div class="swiper-slide">
             <img
-              src="./images/incredibles-page/incredible-page-slider-image3.jpg"
+              src="./images/incredibles-page/incredible-offers-slider/incredible-page-slider-image3.jpg"
               alt=""
               class="incredible-offers-swiper-slide-img"
             />
           </div>
           <div class="swiper-slide">
             <img
-              src="./images/incredibles-page/incredible-page-slider-image4.jpg"
+              src="./images/incredibles-page/incredible-offers-slider/incredible-page-slider-image4.jpg"
               alt=""
               class="incredible-offers-swiper-slide-img"
             />
@@ -209,6 +209,108 @@
       </div>
     </div>
     <!-- #endregion -->
+    <!-- #region daily-deal-->
+    <div class="daily-deal">
+      <div class="daily-deal-center">
+        <div class="daily-deal-center-top">
+          <div class="daily-deal-center-top-img">
+            <img
+              src="./images/incredibles-page/daily-deal/daily-deal-icon.svg"
+              class="daily-deal-center-top-img-svg"
+              alt=""
+            />
+          </div>
+          <span class="daily-deal-center-top-txt">شگفت‌انگیز روز</span>
+        </div>
+        <div class="daily-deal-center-bottom">
+          <!-- Swiper -->
+          <div class="swiper daily-deal-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide-link-container">
+                  <div class="swiper-slide-top">
+                    <img
+                      src="./images/incredibles-page/daily-deal/incredibles-incredible-offer.svg"
+                      alt=""
+                      class="swiper-slide-top-img"
+                    />
+                  </div>
+                  <div class="swiper-slide-bottom">
+                    <div class="swiper-slide-bottom-right">
+                      <img
+                        src=""
+                        alt=""
+                        class="swiper-slide-bottom-right-img"
+                      />
+                    </div>
+                    <div class="swiper-slide-bottom-left">
+                      <p class="swiper-slide-bottom-left-product"></p>
+                      <div class="swiper-slide-bottom-left-info">
+                        <div class="swiper-slide-bottom-left-info-detail">
+                          <img
+                            src=""
+                            alt=""
+                            class="swiper-slide-bottom-left-info-detail-img"
+                          />
+                          <span
+                            class="swiper-slide-bottom-left-info-detail-label"
+                          ></span>
+                        </div>
+                        <div class="swiper-slide-bottom-left-info-rating">
+                          <span
+                            class="swiper-slide-bottom-left-info-rating-num"
+                          ></span>
+                          <img
+                            src="./images/incredibles-page/daily-deal/daily-deal-star.svg"
+                            alt=""
+                            class="swiper-slide-bottom-left-info-rating-svg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide-bottom-left-price">
+                        <div class="swiper-slide-bottom-left-price-off">
+                          <span
+                            class="swiper-slide-bottom-left-price-off-num"
+                          ></span>
+                        </div>
+                        <div class="swiper-slide-bottom-left-price-value">
+                          <span
+                            class="swiper-slide-bottom-left-price-value-num"
+                          ></span>
+                          <img
+                            src="./images/svg/toman.svg"
+                            alt=""
+                            class="swiper-slide-bottom-left-price-value-svg"
+                          />
+                        </div>
+                      </div>
+                      <span class="swiper-slide-bottom-left-pre-off"></span>
+                      <div class="swiper-slide-bottom-left-time-remaining">
+                        <span
+                          class="swiper-slide-bottom-left-time-remaining-numbers"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
     <!-- #region footer-wrapper-->
     <div class="footer-wrapper">
       <!-- #region footer-->
@@ -643,6 +745,7 @@
       <!-- #endregion -->
     </div>
     <!-- #endregion -->
+
     <!-- #region swiperJS-->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -660,6 +763,14 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".daily-deal-swiper", {
+        slidesPerView: 2.3,
+        spaceBetween: 15,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
