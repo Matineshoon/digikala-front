@@ -1,0 +1,106 @@
+.early-access {
+  width: 100%;
+  margin: 10px 0;
+  height: 110px;
+  .early-access-center-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    .early-access-center {
+      width: var(--width-center);
+      height: 100%;
+      padding: 0 30px;
+      border-radius: var(--large-radius);
+      background: url(../../../images/incredibles-page/early-access/early-access-back.svg)
+          right center no-repeat,
+        url(../../../images/incredibles-page/early-access/early-access-back.svg)
+          left center no-repeat;
+      background-color: #ebe4eb;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+      .early-access-center-right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .early-access-center-left {
+        width: 50%;
+        height: 100%;
+        padding: 15px 150px 15px 0;
+
+        .early-access-center-left-top {
+          width: 100%;
+          height: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 4px;
+          .early-access-center-left-top-svg {
+            width: 22px;
+            height: 22px;
+          }
+          .early-access-center-left-top-header {
+            font-family: var(--fontRegular);
+            font-size: 16px;
+            font-weight: 700;
+            color: #b12ba4;
+          }
+        }
+        .early-access-center-left-bottom {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: center;
+          column-gap: 10px;
+          margin-top: 10px;
+          padding-right: 120px;
+          .early-access-center-left-bottom-timer {
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff;
+            border-radius: var(--medium-radius);
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            .early-access-center-left-bottom-timer-num {
+              font-family: var(--fontRegular);
+              font-size: 15px;
+              color: #941b80;
+              font-weight: 700;
+            }
+            .early-access-center-left-bottom-timer-label {
+              font-family: var(--fontRegular);
+              font-size: 7px;
+              color: #941b80;
+              font-weight: normal;
+            }
+          }
+          .early-access-center-left-bottom-label {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            column-gap: 8px;
+            .early-access-center-left-bottom-label-txt {
+              font-family: var(--fontRegular);
+              font-size: 12px;
+              font-weight: 700;
+              color: #941b80;
+            }
+            .early-access-center-left-bottom-label-svg {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
