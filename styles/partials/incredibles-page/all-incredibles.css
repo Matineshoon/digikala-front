@@ -31,6 +31,8 @@
         border: 1px solid rgba(230, 230, 230, 0.8);
         border-radius: var(--medium-radius);
         position: sticky;
+        right: 10px;
+        top: 150px;
         z-index: 5;
         display: flex;
         flex-flow: column nowrap;
@@ -225,310 +227,534 @@
           }
         }
         .all-incredibles-center-filter-supplier-sent {
-            width: 100%;
-            height: fit-content;
-            padding: 12px 0;
+          width: 100%;
+          height: fit-content;
+          padding: 12px 0;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(230, 230, 230, 0.6);
+          .all-incredibles-center-filter-supplier-sent-main-container {
             display: flex;
-            flex-flow: row wrap;
+            width: fit-content;
+            height: 100%;
+            column-gap: 4px;
             align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid rgba(230, 230, 230, 0.6);
-            .all-incredibles-center-filter-supplier-sent-main-container {
-              display: flex;
-              width: fit-content;
-              height: 100%;
-              column-gap: 4px;
-              align-items: center;
-              text-decoration: none;
-              .all-incredibles-center-filter-supplier-sent-main-txt {
-                font-family: var(--fontRegular);
-                font-size: 15px;
-                color: #3f4064;
-              }
-              .all-incredibles-center-filter-supplier-sent-main-svg {
-                width: 18px;
-                height: 18px;
-              }
+            text-decoration: none;
+            .all-incredibles-center-filter-supplier-sent-main-txt {
+              font-family: var(--fontRegular);
+              font-size: 15px;
+              color: #3f4064;
             }
-            .all-incredibles-center-filter-supplier-sent-description {
-                font-family: var(--fontRegular);
-                font-size: 14px;
-                color: #81858b;
-                line-height: 30px;
+            .all-incredibles-center-filter-supplier-sent-main-svg {
+              width: 18px;
+              height: 18px;
+            }
+          }
+          .all-incredibles-center-filter-supplier-sent-description {
+            font-family: var(--fontRegular);
+            font-size: 14px;
+            color: #81858b;
+            line-height: 30px;
+          }
+          .all-incredibles-center-filter-supplier-sent-switch {
+            /* From Uiverse.io by zanina-yassine */
 
+            /* The switch - the box around the slider */
+            .container {
+              width: 40px;
+              height: 20px;
+              position: relative;
             }
-            .all-incredibles-center-filter-supplier-sent-switch {
-              /* From Uiverse.io by zanina-yassine */
-  
-              /* The switch - the box around the slider */
-              .container {
-                width: 40px;
-                height: 20px;
-                position: relative;
-              }
-  
-              /* Hide default HTML checkbox */
-              .checkbox {
-                opacity: 0;
-                width: 0;
-                height: 0;
-                position: absolute;
-              }
-  
-              .switch {
-                width: 100%;
-                height: 100%;
-                display: block;
-                background-color: #e9e9eb;
-                border-radius: 16px;
-                cursor: pointer;
-                transition: all 0.2s ease-out;
-              }
-  
-              /* The slider */
-              .slider {
-                width: 18px;
-                height: 18px;
-                position: absolute;
-                left: calc(50% - 18px / 2 - 10px);
-                top: calc(50% - 18px / 2);
-                border-radius: 50%;
-                background: #ffffff;
-                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15),
-                  0px 3px 1px rgba(0, 0, 0, 0.06);
-                transition: all 0.2s ease-out;
-                cursor: pointer;
-              }
-  
-              .checkbox:checked + .switch {
-                background-color: #19bfd3;
-              }
-  
-              .checkbox:checked + .switch .slider {
-                left: calc(50% - 18px / 2 + 10px);
-                top: calc(50% - 18px / 2);
-              }
+
+            /* Hide default HTML checkbox */
+            .checkbox {
+              opacity: 0;
+              width: 0;
+              height: 0;
+              position: absolute;
             }
-          }
-          .all-incredibles-center-filter-price-range {
-            width: 100%;
-            height: fit-content;
-            padding: 20px 0;
-            border-bottom: 1px solid rgba(230, 230, 230, 0.6);
-            .all-incredibles-center-filter-price-range-link-container {
-              display: flex;
+
+            .switch {
               width: 100%;
               height: 100%;
-              text-decoration: none;
-              flex-flow: row wrap;
-              align-items: center;
-              justify-content: space-between;
-              .all-incredibles-center-filter-price-range-txt {
-                font-family: var(--fontRegular);
-                font-size: 15px;
-                color: #3f4064;
-              }
-              .all-incredibles-center-filter-price-range-svg {
-                width: 20px;
-                height: 20px;
-              }
+              display: block;
+              background-color: #e9e9eb;
+              border-radius: 16px;
+              cursor: pointer;
+              transition: all 0.2s ease-out;
+            }
+
+            /* The slider */
+            .slider {
+              width: 18px;
+              height: 18px;
+              position: absolute;
+              left: calc(50% - 18px / 2 - 10px);
+              top: calc(50% - 18px / 2);
+              border-radius: 50%;
+              background: #ffffff;
+              box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15),
+                0px 3px 1px rgba(0, 0, 0, 0.06);
+              transition: all 0.2s ease-out;
+              cursor: pointer;
+            }
+
+            .checkbox:checked + .switch {
+              background-color: #19bfd3;
+            }
+
+            .checkbox:checked + .switch .slider {
+              left: calc(50% - 18px / 2 + 10px);
+              top: calc(50% - 18px / 2);
             }
           }
-          .all-incredibles-center-filter-only-availables {
-            width: 100%;
-            height: fit-content;
-            padding: 12px 0;
+        }
+        .all-incredibles-center-filter-price-range {
+          width: 100%;
+          height: fit-content;
+          padding: 20px 0;
+          border-bottom: 1px solid rgba(230, 230, 230, 0.6);
+          .all-incredibles-center-filter-price-range-link-container {
             display: flex;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
             flex-flow: row wrap;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 1px solid rgba(230, 230, 230, 0.6);
-            .all-incredibles-center-filter-only-availables-main-container {
-              display: flex;
-              width: fit-content;
-              height: 100%;
-              column-gap: 4px;
-              align-items: center;
-              text-decoration: none;
-              .all-incredibles-center-filter-only-availables-main-txt {
-                font-family: var(--fontRegular);
-                font-size: 15px;
-                color: #3f4064;
-              }
-              .all-incredibles-center-filter-only-availables-main-svg {
-                width: 18px;
-                height: 18px;
-              }
+            .all-incredibles-center-filter-price-range-txt {
+              font-family: var(--fontRegular);
+              font-size: 15px;
+              color: #3f4064;
             }
-            .all-incredibles-center-filter-only-availables-switch {
-              /* From Uiverse.io by zanina-yassine */
-  
-              /* The switch - the box around the slider */
-              .container {
-                width: 40px;
-                height: 20px;
-                position: relative;
-              }
-  
-              /* Hide default HTML checkbox */
-              .checkbox {
-                opacity: 0;
-                width: 0;
-                height: 0;
-                position: absolute;
-              }
-  
-              .switch {
-                width: 100%;
-                height: 100%;
-                display: block;
-                background-color: #e9e9eb;
-                border-radius: 16px;
-                cursor: pointer;
-                transition: all 0.2s ease-out;
-              }
-  
-              /* The slider */
-              .slider {
-                width: 18px;
-                height: 18px;
-                position: absolute;
-                left: calc(50% - 18px / 2 - 10px);
-                top: calc(50% - 18px / 2);
-                border-radius: 50%;
-                background: #ffffff;
-                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15),
-                  0px 3px 1px rgba(0, 0, 0, 0.06);
-                transition: all 0.2s ease-out;
-                cursor: pointer;
-              }
-  
-              .checkbox:checked + .switch {
-                background-color: #19bfd3;
-              }
-  
-              .checkbox:checked + .switch .slider {
-                left: calc(50% - 18px / 2 + 10px);
-                top: calc(50% - 18px / 2);
-              }
+            .all-incredibles-center-filter-price-range-svg {
+              width: 20px;
+              height: 20px;
             }
           }
-          .all-incredibles-center-filter-only-warehouse-availables {
-            width: 100%;
-            height: fit-content;
-            padding: 12px 0;
+        }
+        .all-incredibles-center-filter-only-availables {
+          width: 100%;
+          height: fit-content;
+          padding: 12px 0;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(230, 230, 230, 0.6);
+          .all-incredibles-center-filter-only-availables-main-container {
             display: flex;
+            width: fit-content;
+            height: 100%;
+            column-gap: 4px;
+            align-items: center;
+            text-decoration: none;
+            .all-incredibles-center-filter-only-availables-main-txt {
+              font-family: var(--fontRegular);
+              font-size: 15px;
+              color: #3f4064;
+            }
+            .all-incredibles-center-filter-only-availables-main-svg {
+              width: 18px;
+              height: 18px;
+            }
+          }
+          .all-incredibles-center-filter-only-availables-switch {
+            /* From Uiverse.io by zanina-yassine */
+
+            /* The switch - the box around the slider */
+            .container {
+              width: 40px;
+              height: 20px;
+              position: relative;
+            }
+
+            /* Hide default HTML checkbox */
+            .checkbox {
+              opacity: 0;
+              width: 0;
+              height: 0;
+              position: absolute;
+            }
+
+            .switch {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: #e9e9eb;
+              border-radius: 16px;
+              cursor: pointer;
+              transition: all 0.2s ease-out;
+            }
+
+            /* The slider */
+            .slider {
+              width: 18px;
+              height: 18px;
+              position: absolute;
+              left: calc(50% - 18px / 2 - 10px);
+              top: calc(50% - 18px / 2);
+              border-radius: 50%;
+              background: #ffffff;
+              box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15),
+                0px 3px 1px rgba(0, 0, 0, 0.06);
+              transition: all 0.2s ease-out;
+              cursor: pointer;
+            }
+
+            .checkbox:checked + .switch {
+              background-color: #19bfd3;
+            }
+
+            .checkbox:checked + .switch .slider {
+              left: calc(50% - 18px / 2 + 10px);
+              top: calc(50% - 18px / 2);
+            }
+          }
+        }
+        .all-incredibles-center-filter-only-warehouse-availables {
+          width: 100%;
+          height: fit-content;
+          padding: 12px 0;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(230, 230, 230, 0.6);
+          .all-incredibles-center-filter-only-warehouse-availables-main-container {
+            display: flex;
+            width: fit-content;
+            height: 100%;
+            column-gap: 4px;
+            align-items: center;
+            text-decoration: none;
+            .all-incredibles-center-filter-only-warehouse-availables-main-txt {
+              font-family: var(--fontRegular);
+              font-size: 15px;
+              color: #3f4064;
+              display: -webkit-box;
+              text-align: right;
+              width: 170px;
+            }
+            .all-incredibles-center-filter-only-warehouse-availables-main-svg {
+              width: 18px;
+              height: 18px;
+            }
+          }
+          .all-incredibles-center-filter-only-warehouse-availables-switch {
+            /* From Uiverse.io by zanina-yassine */
+
+            /* The switch - the box around the slider */
+            .container {
+              width: 40px;
+              height: 20px;
+              position: relative;
+            }
+
+            /* Hide default HTML checkbox */
+            .checkbox {
+              opacity: 0;
+              width: 0;
+              height: 0;
+              position: absolute;
+            }
+
+            .switch {
+              width: 100%;
+              height: 100%;
+              display: block;
+              background-color: #e9e9eb;
+              border-radius: 16px;
+              cursor: pointer;
+              transition: all 0.2s ease-out;
+            }
+
+            /* The slider */
+            .slider {
+              width: 18px;
+              height: 18px;
+              position: absolute;
+              left: calc(50% - 18px / 2 - 10px);
+              top: calc(50% - 18px / 2);
+              border-radius: 50%;
+              background: #ffffff;
+              box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15),
+                0px 3px 1px rgba(0, 0, 0, 0.06);
+              transition: all 0.2s ease-out;
+              cursor: pointer;
+            }
+
+            .checkbox:checked + .switch {
+              background-color: #19bfd3;
+            }
+
+            .checkbox:checked + .switch .slider {
+              left: calc(50% - 18px / 2 + 10px);
+              top: calc(50% - 18px / 2);
+            }
+          }
+        }
+        .all-incredibles-center-filter-supplier-type {
+          width: 100%;
+          height: fit-content;
+          padding: 20px 0;
+          border-bottom: 1px solid rgba(230, 230, 230, 0.6);
+          .all-incredibles-center-filter-supplier-type-link-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
             flex-flow: row wrap;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 1px solid rgba(230, 230, 230, 0.6);
-            .all-incredibles-center-filter-only-warehouse-availables-main-container {
-              display: flex;
-              width: fit-content;
-              height: 100%;
-              column-gap: 4px;
-              align-items: center;
-              text-decoration: none;
-              .all-incredibles-center-filter-only-warehouse-availables-main-txt {
-                font-family: var(--fontRegular);
-                font-size: 15px;
-                color: #3f4064;
-                display: -webkit-box;
-                text-align: right;
-                width: 170px;
-              }
-              .all-incredibles-center-filter-only-warehouse-availables-main-svg {
-                width: 18px;
-                height: 18px;
-              }
+            .all-incredibles-center-filter-supplier-type-txt {
+              font-family: var(--fontRegular);
+              font-size: 15px;
+              color: #3f4064;
             }
-            .all-incredibles-center-filter-only-warehouse-availables-switch {
-              /* From Uiverse.io by zanina-yassine */
-  
-              /* The switch - the box around the slider */
-              .container {
-                width: 40px;
-                height: 20px;
-                position: relative;
-              }
-  
-              /* Hide default HTML checkbox */
-              .checkbox {
-                opacity: 0;
-                width: 0;
-                height: 0;
-                position: absolute;
-              }
-  
-              .switch {
-                width: 100%;
-                height: 100%;
-                display: block;
-                background-color: #e9e9eb;
-                border-radius: 16px;
-                cursor: pointer;
-                transition: all 0.2s ease-out;
-              }
-  
-              /* The slider */
-              .slider {
-                width: 18px;
-                height: 18px;
-                position: absolute;
-                left: calc(50% - 18px / 2 - 10px);
-                top: calc(50% - 18px / 2);
-                border-radius: 50%;
-                background: #ffffff;
-                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15),
-                  0px 3px 1px rgba(0, 0, 0, 0.06);
-                transition: all 0.2s ease-out;
-                cursor: pointer;
-              }
-  
-              .checkbox:checked + .switch {
-                background-color: #19bfd3;
-              }
-  
-              .checkbox:checked + .switch .slider {
-                left: calc(50% - 18px / 2 + 10px);
-                top: calc(50% - 18px / 2);
-              }
+            .all-incredibles-center-filter-supplier-type-svg {
+              width: 20px;
+              height: 20px;
             }
           }
-          .all-incredibles-center-filter-supplier-type {
-            width: 100%;
-            height: fit-content;
-            padding: 20px 0;
-            border-bottom: 1px solid rgba(230, 230, 230, 0.6);
-            .all-incredibles-center-filter-supplier-type-link-container {
-              display: flex;
-              width: 100%;
-              height: 100%;
-              text-decoration: none;
-              flex-flow: row wrap;
-              align-items: center;
-              justify-content: space-between;
-              .all-incredibles-center-filter-supplier-type-txt {
-                font-family: var(--fontRegular);
-                font-size: 15px;
-                color: #3f4064;
-              }
-              .all-incredibles-center-filter-supplier-type-svg {
-                width: 20px;
-                height: 20px;
-              }
-            }
-          }
-          .no-border-bottom {
-            border-bottom: none !important;
-          }
+        }
+        .no-border-bottom {
+          border-bottom: none !important;
+        }
       }
 
       .all-incredibles-center-main {
         width: calc(100% - 270px - 15px);
-        height: 1000px;
-        background-color: blueviolet;
+        height: auto;
+        .all-incredibles-center-main-head {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-between;
+          .all-incredibles-center-main-head-menu {
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            column-gap: 12px;
+            .all-incredibles-center-main-head-menu-items {
+              width: fit-content;
+              height: 100%;
+              display: flex;
+              flex-flow: row wrap;
+              align-items: center;
+              justify-content: center;
+              column-gap: 2px;
+              &:hover .all-incredibles-center-main-head-menu-items-txt,
+              .all-incredibles-center-main-head-menu-items-first-txt,
+              .all-incredibles-center-main-head-menu-items-last-txt {
+                cursor: pointer;
+              }
+              .all-incredibles-center-main-head-menu-items-svg {
+                width: 24px;
+                height: 24px;
+              }
+              .all-incredibles-center-main-head-menu-items-txt {
+                font-family: var(--fontRegular);
+                font-size: 12px;
+                color: #81858b;
+              }
+              .all-incredibles-center-main-head-menu-items-last-txt {
+                font-family: var(--fontRegular);
+                font-size: 12px;
+                color: #ef394e;
+              }
+              .all-incredibles-center-main-head-menu-items-first-txt {
+                font-family: var(--fontRegular);
+                font-size: 12px;
+                color: #3f4064;
+                font-weight: 700;
+              }
+            }
+          }
+          .all-incredibles-center-main-head-items-count {
+            font-family: var(--fontRegular);
+            font-size: 12px;
+            color: #81858b;
+          }
+        }
+        .all-incredibles-center-main-offers {
+          width: 100%;
+          height: auto;
+          .all-incredibles-center-main-offers-row-container {
+            border-top: 1px solid rgb(230, 230, 230);
+            width: 100%;
+            height: 515px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            .all-incredibles-center-main-offers-items {
+              width: calc(100% / 3);
+              height: 100%;
+              padding: 12px 8px;
+              display: flex;
+              flex-flow: column wrap;
+              border-left: 1px solid rgb(230, 230, 230);
+              &:hover {
+                box-shadow: 0 0 5px #7f7f7f;
+              }
+              .all-incredibles-center-main-offers-items-link-container {
+                display: flex;
+                flex-flow: column wrap;
+                width: 100%;
+                height: 100%;
+                padding: 12px 8px;
+                row-gap: 8px;
+                text-decoration: none;
+                .all-incredibles-center-main-offers-items-svg {
+                  width: 116px;
+                  height: 14px;
+                }
+                .all-incredibles-center-main-offers-items-special-svg {
+                  width: 125px;
+                  height: 14px;
+                }
+                .all-incredibles-center-main-offers-items-product-img {
+                  width: 240px;
+                  height: 240px;
+                }
+                .all-incredibles-center-main-offers-items-product-description {
+                  width: 100%;
+                  height: 52px;
+                  font-family: var(--fontRegular);
+                  font-size: 12px;
+                  color: #3f4064;
+                  font-weight: 700;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 2;
+                  line-clamp: 2;
+                  overflow: hidden;
+                  text-align: right;
+                  line-height: 25px;
+                }
+                .all-incredibles-center-main-offers-items-product-info-container {
+                  display: flex;
+                  width: 100%;
+                  height: 40px;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  .delivery-today {
+                    width: 50%;
+                    height: 25px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: flex-start;
+                    column-gap: 4px;
+                    justify-content: flex-start;
+                    font-family: var(--fontRegular);
+                    color: #62666d;
+                    font-size: 11px;
+                    .delivery-today-svg {
+                      width: 18px;
+                      height: 18px;
+                    }
+                  }
+                  .all-incredibles-center-main-offers-items-product-rating {
+                    display: flex;
+                    width: 50%;
+                    height: 100%;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: flex-end;
+                    column-gap: 4px;
+                    .all-incredibles-center-main-offers-items-product-rating-num {
+                      font-family: var(--fontRegular);
+                      font-size: 12px;
+                      color: #3f4064;
+                    }
+                    .all-incredibles-center-main-offers-items-product-rating-svg {
+                      width: 16px;
+                      height: 16px;
+                    }
+                  }
+                }
+                .all-incredibles-center-main-offers-items-product-price {
+                  width: 100%;
+                  height: 30px;
+                  display: flex;
+                  flex-flow: row wrap;
+                  align-items: center;
+                  justify-content: space-between;
+                  .all-incredibles-center-main-offers-items-product-price-off {
+                    width: 34px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #d32f2f;
+                    border-radius: var(--medium-large-radius);
+                    font-family: var(--fontRegular);
+                    font-size: 12px;
+                    color: #ffffff;
+                    font-weight: 700;
+                  }
+                  .all-incredibles-center-main-offers-items-product-price-value {
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    column-gap: 4px;
+                    font-family: var(--fontRegular);
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #3f4064;
+                    .all-incredibles-center-main-offers-items-product-price-value-svg {
+                      width: 18px;
+                      height: 18px;
+                    }
+                  }
+                }
+                .all-incredibles-center-main-offers-items-product-pre-off-price {
+                  text-decoration: line-through;
+                  font-family: var(--fontRegular);
+                  font-size: 12px;
+                  color: #c0c2c5;
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  padding: 0 0 0 26px;
+                }
+                .all-incredibles-center-main-offers-items-product-remaining-offer-time {
+                  direction: ltr;
+                  display: flex;
+                  flex-flow: row wrap;
+                  align-items: center;
+
+                  justify-content: flex-start;
+                  column-gap: 2px;
+                  .all-incredibles-center-main-offers-items-product-remaining-offer-time-number {
+                    font-family: var(--fontRegular);
+                    font-size: 12px;
+                    color: #ef394e;
+                    font-weight: 700;
+                    &:empty {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
+}
+.no-border-left {
+  border-left: none !important;
+}
+.add-border-bottom {
+  border-bottom: 1px solid rgb(230, 230, 230) !important;
 }
