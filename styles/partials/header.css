@@ -149,7 +149,20 @@
           line-height: 40px;
           align-items: center;
           column-gap: 5px;
-
+          position: relative;
+          overflow: hidden;
+          .right-nav-item-link-underline {
+            transition: 250ms;
+            width: 100%;
+            height: 2px;
+            background-color: #ef394e;
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+          }
+          &:hover .right-nav-item-link-underline {
+            left: 0;
+          }
           .right-nav-item-link-img {
             opacity: 0.4;
             width: 18px;
